@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A3Q4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="onclick">click for custom popup</button>
+    <div class="overlay">
+        <div class="popup">
+            <h2>Congratulations!!!</h2>
+            <a href="#" class="close">&times;</a>
+            <p>You have reached my custom popup!</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#onclick").click(function(){
+                $(".overlay").css({"visibility":"visible", "opacity":"1"})
+            })
+            $(".close").click(function(){
+                $(".overlay").css({"visibility":"hidden", "opacity":"0"})
+            })
+        })
+    </script>
+</body>
+</html>

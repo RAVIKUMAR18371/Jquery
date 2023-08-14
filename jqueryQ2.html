@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A3Q2</title>
+</head>
+<body>
+    <p>Click me!</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).css({
+                    fontSize: 50
+                })
+            })
+            $("p").dblclick(function(){
+                $(this).css({
+                    fontSize: 100
+                })
+            })
+        })
+    </script>
+</body>
+</html>
